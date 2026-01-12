@@ -16,6 +16,7 @@ public class Scene01Events : MonoBehaviour
     [SerializeField] int textLength;
     [SerializeField] GameObject mainTextObject;
     [SerializeField] GameObject nextButton;
+    [SerializeField] GameObject nextButton2;
     [SerializeField] int eventPos = 0;
     [SerializeField] GameObject charName;
     [SerializeField] GameObject fadeOut;
@@ -39,16 +40,13 @@ public class Scene01Events : MonoBehaviour
         yield return new WaitForSeconds(2);
         // this is where our text function will go in future tutorial
         mainTextObject.SetActive(true);
-        textToSpeak = "I wonder where Haruka has got to. She was supposed to be here.";
-        textBox.GetComponent<TMPro.TMP_Text>().text = textToSpeak;
-        currentTextLength = textToSpeak.Length;
-        TextCreator.runTextPrint = true;
         girlSigh.Play();
         yield return new WaitForSeconds(0.05f);
         yield return new WaitForSeconds(1);
         yield return new WaitUntil(() => textLength == currentTextLength);
         yield return new WaitForSeconds(0.5f);
         nextButton.SetActive(true);
+        nextButton2.SetActive(true);
         eventPos = 1;
 
     }
