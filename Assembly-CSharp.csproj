@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SplashToMain.cs" />
+    <Compile Include="Assets\Scripts\New Folder\Dialogue responses.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\New Folder\Hierarchyactivator.cs" />
     <Compile Include="Assets\Scripts\Scene01\Scene01Events.cs" />

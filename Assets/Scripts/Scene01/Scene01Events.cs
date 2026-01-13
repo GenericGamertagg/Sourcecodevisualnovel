@@ -16,7 +16,8 @@ public class Scene01Events : MonoBehaviour
     [SerializeField] int textLength;
     [SerializeField] GameObject mainTextObject;
     [SerializeField] GameObject nextButton;
-    [SerializeField] GameObject nextButton2;
+    [SerializeField] GameObject response1;
+    [SerializeField] GameObject response2;
     [SerializeField] int eventPos = 0;
     [SerializeField] GameObject charName;
     [SerializeField] GameObject fadeOut;
@@ -45,10 +46,11 @@ public class Scene01Events : MonoBehaviour
         yield return new WaitForSeconds(1);
         yield return new WaitUntil(() => textLength == currentTextLength);
         yield return new WaitForSeconds(0.5f);
-        nextButton.SetActive(true);
-        nextButton2.SetActive(true);
+        response1.SetActive(true);
+        response2.SetActive(true);
         eventPos = 1;
-
+        Debug.Log("next scene play");
+        nextButton.SetActive(true);
     }
 
     IEnumerator EventOne()
