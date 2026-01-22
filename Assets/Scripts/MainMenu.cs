@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
         fadeOut.SetActive(true);
         StartCoroutine(TransferToClassScene());
     }
-
+object 
     public void LoadGame()
     {
         saveTransferValue = PlayerPrefs.GetInt("LoadState");

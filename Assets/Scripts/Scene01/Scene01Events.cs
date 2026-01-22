@@ -51,7 +51,7 @@ public class Scene01Events : MonoBehaviour
         eventPos = 1;
         Debug.Log("next scene play");
         nextButton.SetActive(true);
-    }
+    } 
 
     IEnumerator EventOne()
     {
